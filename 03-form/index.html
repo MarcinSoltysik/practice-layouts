@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Form Validation</title>
+  </head>
+  <body>
+    <div class="container">
+      <form action="" id="form" class="form">
+        <h3 class="form__title">Get Started</h3>
+
+        <!-- User Name input -->
+        <div>
+          <label for="username" class="form__label">User Name</label>
+          <i class="fas fa-user"></i>
+          <input
+            type="text"
+            name="username"
+            id="username"
+            placeholder="John Doe"
+            class="form__input"
+          />
+          <i class="fas fa-exclamation-circle failure-icon"></i>
+          <i class="far fa-check-circle success-icon"></i>
+          <div class="error"></div>
+        </div>
+
+        <!-- Email input -->
+
+        <div>
+          <label for="email" class="form__label">Email</label>
+          <i class="far fa-envelope"></i>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="abc@example.com"
+            class="form__input"
+          />
+          <i class="fas fa-exclamation-circle failure-icon"></i>
+          <i class="far fa-check-circle success-icon"></i>
+          <div class="error"></div>
+        </div>
+
+        <!--   Password input -->
+        <div>
+          <label for="password" class="form__label">Password</label>
+          <i class="fas fa-lock"></i>
+          <input
+            type="password"
+            name="password"
+            id="password"
+            placeholder="Password here"
+            class="form__input"
+          />
+          <i class="fas fa-exclamation-circle failure-icon"></i>
+          <i class="far fa-check-circle success-icon"></i>
+          <div class="error"></div>
+        </div>
+        <button id="btn" type="submit" class="btn-submit">Submit</button>
+      </form>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
